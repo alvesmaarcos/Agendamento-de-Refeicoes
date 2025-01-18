@@ -34,16 +34,22 @@ for i in range(7): # abrir o menu discente
 pyautogui.press("enter") 
 time.sleep(3)
 
-time.sleep(5)
-pyautogui.click(x=186, y=161) # abrir o menu de agendamento
-for i in range(7):
+time.sleep(5) # abrir o menu de agendamento
+for i in range(16):
     pyautogui.press("tab")
 
 pyautogui.press("enter")
 pyautogui.press("tab")
 pyautogui.press("enter")
+time.sleep(2)
+
+pyautogui.PAUSE = 0.6
 
 diaAgendado = datetime.date.today() + datetime.timedelta(days=1)  # Inicializa com a data de amanha
+
+for i in range(10):
+    pyautogui.press("tab")
+aux = False
 
 for i in range(n):
     agendouAlmoco = False
@@ -51,10 +57,6 @@ for i in range(n):
 
         while diaAgendado.weekday() in [5, 6]:  # pula fins de semana (sabado ou domingo)
             diaAgendado += datetime.timedelta(days=1)
-
-        time.sleep(2)
-        pyautogui.click(x=296, y=356)
-        pyautogui.press("tab")
 
         s = diaAgendado.strftime("%d/%m/%Y")  # converte a data para o formato DD/MM/YYYY
         pyautogui.typewrite(s) # campo data da refeicao
@@ -78,6 +80,12 @@ for i in range(n):
         pyautogui.press("enter")
 
         agendouAlmoco = True  # Passa para o jantar
+
+        time.sleep(2)
+        if(aux):
+            for i in range(3):
+                pyautogui.press("tab")
+        aux = True
 
     # Incrementa a data para o próximo dia
     diaAgendado += datetime.timedelta(days=1)

@@ -32,4 +32,4 @@ Para agendar refeições de forma automatizada com este programa, é necessário
 - [x] A linguagem Python esteja instalada na máquina.
 - [x] O download da biblioteca pyautogui seja feito.¹
 
-###### 1: Para instalar o pyatogui, basta abrir o terminal do seu computador e digitar: "!pip install pyautogui". O Python já deve estar instalado.
+###### 1: Para instalar o pyatogui, basta abrir o terminal do seu computador e digitar: "pip install pyautogui". O Python já deve estar instalado.

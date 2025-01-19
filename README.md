@@ -18,8 +18,8 @@
 # Observações
 Para executar o programa, você pode:
   1. Abrir o terminal, digitar o caminho em que o arquivo está localizado, e executar.
-  2. Abrir o arquivo através de um compilador, como o VsCode.
-  3. Adicionar um atalho do arquivo à área de trabalho. Para que ele seja inicializado diretamente no Python, clique com o botão direito no atalho > Abri com > Python.
+  2. Abrir o arquivo através de um compilador, como o VsCode, e executar.
+  3. Adicionar um atalho do arquivo à área de trabalho. Para que ele seja inicializado diretamente no Python, clique com o botão direito no atalho > Abrir com > Python.
      
   O sistema utiliza como parâmetro a data atual do computador, e realiza agendamentos a partir do dia seguinte, já que o sistema de agendamentos não permite que se agende uma refeição no dia referente à mesma.
 
